@@ -65,7 +65,7 @@ class Ui_Form(object):
     
     def getResult(self):
         self.progressBar.setVisible(True)
-        dl = DeepLearning(Ui_Form().fpath)
+        dl = DeepLearning(Ui_Form.fpath)
         result = dl.getClass()
         result = str(result[0])
         self.doAction()
